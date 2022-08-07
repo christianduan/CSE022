@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Book</title>
+
+    <link rel = "stylesheet" href = "static/bootstrap/bootstrap.min.css">
+    <script src = "static/jquery/jquery.js"></script>
+    <script src = "static/bootstrap/bootstrap.min.js"></script>
+    <script src = "static/book.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "static/css/styles.css">
+</head>
+
+<body class = "darkgray-bg">	
+	<nav class = "navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class = "navbar-brand" href = "#">Christian's Page</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNavbar">
+		<span class = "navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class = "collapse navbar-collapse" id = "collapsibleNavbar">
+		<ul class = "navbar-nav">
+		<li class = "nav-item">
+			<a class = "nav-link" href = "/">Home</a>
+		</li>
+		<li class="nav-item">
+            <a class = "nav-link" href = "/hobbies">Hobbies</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "/secret">Secret</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "/game">Game</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link active" href = "#">Book</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "/addressbook">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+
+	<div class = "jumbotron text-center black-bg">
+		<h1 class = "white">How It Works</h1>
+	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-7">
+				<textarea readonly id = "bookText" class = "form-control" rows = "25"></textarea>
+			</div>
+
+			<div class = "col-sm-5">
+				<h3 class = "white">Info About "How It Works"</h3>
+				<ul>
+            	<li class = "white" id="words">Number of words: ...</li>
+            	<li class = "white" id="longest-word">Longest word: ...</li>
+            	<li class = "white" id="shortest-word">Shortest word: ...</li>
+            	<li class = "white" >Frequent words:</li>
+              	<ul class = "white" id="mostFrequentWordsList">
+              </ul>
+            </li>
+          </ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

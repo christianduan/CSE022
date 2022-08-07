@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Midterm</title>
+
+    <link rel = "stylesheet" href = "static/bootstrap/bootstrap.min.css">
+    <script src = "static/jquery/jquery.js"></script>
+    <script src = "static/bootstrap/bootstrap.min.js"></script>
+    <script src = "static/game.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "static/css/styles.css">
+</head>
+
+<body>	
+	<nav class = "navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class = "navbar-brand" href = "#">Christian's Page</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNavbar">
+		<span class = "navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class = "collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class = "navbar-nav">
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./index.html">Home</a>
+		</li>
+		<li class = "nav-item">
+            <a class = "nav-link" href = "./hobbies.html">Hobbies</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./secret.html">Secret</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link active" href = "#">Game</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./book.html">Book</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./addressbook.html">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+
+	<div id = "jtron" class = "jumbotron text-center black-bg white">
+	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col">
+				<input id = "letter_box" class = "form-control">
+				<button id = "check_btn" class = "btn btn-primary spaceup form-control">Check</button>
+			</div>
+		</div>
+	</div>
+
+	<div id = "wrongs" class = "container">
+		<h4>Wrong Attempts: </h4>
+	</div>
+	
+	<div>
+		<img id="pole" class="pole" src="/static/images/pole.png">
+		<img id="head" class="head hidden" src="/static/images/head.png">
+		<img id="body" class="body hidden" src="/static/images/body.png">
+		<img id="left-arm" class="left-arm hidden" src="/static/images/left-arm.png">
+		<img id="right-arm" class="right-arm hidden" src="/static/images/right-arm.png">
+		<img id="left-leg" class="left-leg hidden"  src="/static/images/left-leg.png">
+		<img id="right-leg" class="right-leg hidden" src="/static/images/right-leg.png">
+	</div>
+
+
+</body>
+
+</html>

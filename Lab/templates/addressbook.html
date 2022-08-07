@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Address Book</title>
+
+    <link rel = "stylesheet" href = "static/bootstrap/bootstrap.min.css">
+    <script src = "static/jquery/jquery.js"></script>
+    <script src = "static/bootstrap/bootstrap.min.js"></script>
+    <script src = "static/addressbook.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "static/css/styles.css">
+</head>
+
+<body class = "darkgray-bg">	
+	<nav class = "navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class = "navbar-brand" href = "#">Christian's Page</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNavbar">
+		<span class = "navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class = "collapse navbar-collapse" id = "collapsibleNavbar">
+		<ul class = "navbar-nav">
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./index.html">Home</a>
+		</li>
+		<li class="nav-item">
+            <a class = "nav-link" href = "./hobbies.html">Hobbies</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./secret.html">Secret</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./game.html">Game</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./book.html">Book</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link active" href = "#">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+		<div class="right hidden" id = "searchbar">
+			<div class="row">
+				<div>
+					<input type="search" autocomplete="false" id="searchbox" class="form-control" placeholder="Search"></input> 
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class = "jumbotron text-center black-bg">
+		<h1 class = "white">Address Book</h1>
+	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div id = "login_box" class = "col">
+				<h2 class = "white">Log In</h2>
+				<input id = "username" placeholder = "Username" class = "form-control spaceup">
+				<input id = "password" placeholder = "Password" type = "password" class="form-control spaceup">
+				<button id = "login_btn" class = "btn btn-primary spaceup">Log In</button>
+			</div>
+
+			<div id = "signup_box" class = "col">
+				<h2 class = "white">Sign Up</h2>
+				<input id = "new_username" placeholder = "Create a username" class = "form-control spaceup">
+				<input id = "new_password" placeholder = "Create a password" type = "password" class="form-control spaceup">
+				<button id = "signup_btn" class = "btn btn-primary spaceup">Sign up</button>
+			</div>
+		</div>
+	</div>
+
+	<div class = "container hidden" id = "new_contact" align = "right">
+		<div class = "row"> 
+			<div class = "col">
+				<button id = "new_contact_btn" class = "btn btn-primary spaceup">Create New</button>
+			</div>
+		</div>
+	</div>
+
+	<div class = "container hidden" id = "contact_form">
+		<div id = "info_box" class = "col">
+			<h2 class = "white">New Information</h2>
+			<input id = "first_name" placeholder = "Enter First Name" class = "form-control spaceup">
+			<input id = "last_name" placeholder = "Enter Last Name" class="form-control spaceup">
+			<input id = "address" placeholder = "Enter Address" class = "form-control spaceup">
+			<input id = "city" placeholder = "Enter City" class="form-control spaceup">
+			<input id = "state" placeholder = "Enter State" class = "form-control spaceup">
+			<input id = "zip_code" placeholder = "Enter Zip Code" class="form-control spaceup">
+			<input id = "phone_1" placeholder = "Enter Phone Number" class = "form-control spaceup">
+			<input id = "phone_2" placeholder = "Enter Phone Number" class="form-control spaceup">
+			<input id = "email" placeholder = "Enter Email" class = "form-control spaceup">
+			<button id = "submit_btn" class = "btn btn-primary spaceup">Submit</button>
+			<button id = "cancel_btn" class = "btn btn-primary spaceup">Cancel</button>
+		</div>
+	</div>
+
+	<div class="container hidden spaceup" id = "abtable">
+		<div class="row">
+			<div class="col">
+				<h1 class = "white">Contacts</h1>
+				<table cellpadding = "10px" id = "table" class = "border">
+					<thead>
+						<tr>
+							<th class = "border"><b class = "white">First Name</b></th>
+							<th class = "border"><b class = "white">Last Name</b></th>
+							<th class = "border"><b class = "white">Address</b></th>
+							<th class = "border"><b class = "white">City</b></th>
+							<th class = "border"><b class = "white">State</b></th>
+							<th class = "border"><b class = "white">Zip</b></th>
+							<th class = "border"><b class = "white">Phone 1</b></th>
+							<th class = "border"><b class = "white">Phone 2</b></th>
+							<th class = "border"><b class = "white">Email</b></th>
+						</tr>
+					</thead>
+					<tbody id = "tbody"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+		
+</body>
+
+</html>

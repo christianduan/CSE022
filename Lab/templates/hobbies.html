@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+
+    <link rel = "stylesheet" href = "../static/bootstrap/bootstrap.min.css">
+    <script src = "../static/jquery/jquery.js"></script>
+    <script src = "../static/bootstrap/bootstrap.min.js"></script>
+    <script src = "../static/main.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "../static/css/styles.css">
+</head>
+
+<body>
+	<nav class = "navbar navbar-expand-md bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class = "navbar-brand" href = "#">Christian's Page</a>
+
+	<!-- Toggler/collapsibe Button -->
+	<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNavbar">
+		<span class = "navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Navbar links -->
+	<div class = "collapse navbar-collapse" id = "collapsibleNavbar">
+		<ul class = "navbar-nav">
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./index.html">Home</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link active" href = "#">Hobbies</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./secret.html">Secret</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./game.html">Game</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./book/html">Book</a>
+		</li>
+		<li class = "nav-item">
+			<a class = "nav-link" href = "./addressbook.html">Address Book</a>
+		</li>
+		</ul>
+	</div> 
+	</nav>
+	
+	<div class = "jumbotron text-center black-bg">
+		<h1 class = "white">Hobbies</h1>
+	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-3">
+				<h3>Playing Video Games</h3>
+				<p>Playing video games has allowed me to become the person I am today. I 
+				remember being introduced to video games at very young age, around 6 or so.
+				Ever since then, I was shown to different games, different genres, and different
+				platforms. Nowadays, I play games whenever I have free time and to both entertain
+				myself and relax.
+				</p>
+				<br>
+				<img class = "flow-control" width = "225" height = "150" src = "/static/images/switch.jpg">
+			</div>
+
+			<div class = "col-sm-6">
+				<h3>Building PCs</h3>
+				<p>Over the past couple of years, I have picked up on the idea of building pcs.
+				Although I have yet to put together a pc on my own, I have been upgrading and 
+				working on the laptops and pcs that I have at my disposal to get a better
+				of how parts work in a system.
+				</p>
+				<img width = "400" width = "400" src = "/static/images/NZXT.jpg">
+			</div>
+
+			<div class = "col-sm-3">
+				<h3>Watching Youtube</h3>
+				<p>Watching Youtube videos sparked my interest in both playing video games
+				and building pcs. I used, and still use, Youtube as a way to obtain knowledge
+				also for entertainment as there are new videos being uploaded everday to keep
+				me entertained.
+				</p>
+				<br>
+				<img width = "200" height = "125" src = "/static/images/youtube.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Sign in</h2>
+				<input id="name" placeholder="Your name" class="form-control">
+				<textarea id="message" placeholder="Your message" class="form-control spaceup"></textarea>
+				<button id="submit_btn" class="btn btn-primary spaceup">Submit</button>
+			</div>
+
+			<div class="col-sm-6">
+				<h2>Comment</h2>
+				
+				<div id="comments_section"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
